@@ -36,6 +36,7 @@
 
 .navegacion-portafolio__lista {
     width: 100%;
+    height: 0;
     position: absolute;
     top: 50px;
     left: 0;

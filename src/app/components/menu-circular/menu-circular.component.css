@@ -1,8 +1,10 @@
 .menu-circular {
     position: fixed;
-    right: .1px;
-    bottom: 10px;
+    right: var(--tamaño-button);
+    bottom: var(--tamaño-button);
     z-index: 200;
+    width: var(--tamaño-button);
+    height: var(--tamaño-button);
 }
 
 .menu-circular__button {
@@ -17,14 +19,17 @@
     outline: none;
     cursor: pointer;
     z-index: 100;
-    transform: translate(var(--mitad-lista),var(--mitad-lista)) rotateZ(-45deg);
+    transform: rotateZ(-45deg);
     box-shadow: 0 0 5px 2px var(--bg-banner-transparent);
     transition: transform .5s linear;
+    z-index: 10;
 }
 
 
 .menu-circular__lista {
-    position: relative;
+    position: absolute;
+    left: -100%;
+    top: -100%;
     width: var(--tamaño-menu);
     height: var(--tamaño-menu);
     background-color: var(--bg-color-menu);
@@ -34,16 +39,26 @@
     transform: scale(0);
     transition: transform 1s linear;
     box-shadow: 0 0 5px 2px var(--bg-color-menu-transparent);
+    z-index: 1;
 }
 
 .menu-circular__item{
+    position: absolute;
+    display: block;
+    width: var(--font-size-item);
+    height: var(--font-size-item);
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
     font-size: var(--font-size-item);
     list-style: none;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .menu-circular__link {
     color: var(--color-texto);
+    font-size: var(--font-size-item);
 }
 
 
@@ -53,26 +68,22 @@
 
 
 .menu-circular__item:first-child {
-    position: absolute;
-    right: 10px;
-    top: var(--mitad-item);
+    margin: 0 auto;
+    top: 10px;
 }
 
 .menu-circular__item:nth-child(2) {
-    position: absolute;
-    top: 10px;
-    left: var(--mitad-item);
+    margin: auto  0 auto auto;
+    right: 10px;
 }
 
 .menu-circular__item:nth-child(3) {
-    position: absolute;
-    top: var(--mitad-item);
+    margin: auto 0;
     left: 10px;
 }
 
 .menu-circular__item:nth-child(4) {
-    position: absolute;
-    left: var(--mitad-item);
+    margin: auto auto 0 auto;
     bottom: 10px;
 }
 
