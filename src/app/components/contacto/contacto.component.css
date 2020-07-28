@@ -1,0 +1,138 @@
+.contacto {
+    padding: 0 70px;
+    margin-bottom: var(--mb-components);
+}
+
+.contacto__titulo, .contacto__descripcion {
+    position: relative;
+    font-size: var(--font-size-titulo);
+    color: var(--bg-banner);
+    text-align: center;
+    margin: 0;
+    margin-bottom: var(--mb-titulo);
+}
+
+.contacto__titulo::before {
+    content: '';
+    display: block;
+    width: 200px;
+    height: 2px;
+    background-color: #D52327;
+    position: absolute;
+    top: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.contacto__descripcion {
+    font-size: var(--font-size-descripcion);
+    margin-bottom: var(--mb);
+}
+
+
+.contacto__correo {
+    color: #CB2327;
+}
+
+.contacto__formulario {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-row-gap: 1rem;
+    width: 700px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.contacto__formulario__titulo {
+    font-size: 1.5rem;
+    color: var(--bg-banner);
+    text-align: center;
+    margin: 0;
+}
+
+.contacto__text-area {
+    color: var(--bg-banner);
+    outline: none;
+    resize: none;
+    padding: 5px;
+    border-radius: 1px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.contacto__btn {
+    position: relative;
+    justify-self: center;
+    height: 40px;
+    color: var(--color-texto);
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: var(--bg-banner);
+    padding: 10px;
+    cursor: pointer;
+}
+
+.contacto__btn:hover {
+    background-color: rgb(48, 56, 78);
+}
+
+
+
+
+.saludo {
+    display: block;
+    width: 100px;
+    color: var(--bg-banner);
+    font-size: 5rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2.5rem;
+}
+
+.saludar {
+    animation-fill-mode: both;
+    animation: saludar 1s linear infinite alternate;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.2));
+}
+
+@keyframes saludar {
+
+    0% {
+        transform: translateY(-10px);
+    }
+    
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .contacto {
+        padding: 0 30px;
+    }
+
+    .contacto__formulario {
+        width: 100%;
+        height: 230px;
+    }
+
+    .contacto__descripcion {
+        font-size: 1rem;
+    }
+}
+    
+    
+    

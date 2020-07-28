@@ -1,0 +1,135 @@
+.trabajos {
+    padding: 0 70px;
+    margin-bottom: var(--mb-components);
+}
+
+.trabajos__titulo, .trabajos__descripcion {
+    position: relative;
+    font-size: var(--font-size-titulo);
+    color: var(--bg-banner);
+    text-align: center;
+    margin: 0;
+    margin-bottom: var(--mb-titulo);
+}
+
+.trabajos__titulo::before {
+    content: '';
+    display: block;
+    width: 200px;
+    height: 2px;
+    background-color: #D52327;
+    position: absolute;
+    top: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+
+.trabajos__descripcion {
+    font-size: var(--font-size-descripcion);
+    margin-bottom: var(--mb);
+}
+
+.trabajos__card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+    padding-bottom: 2.5rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid rgba(36, 41, 55, 0.3);
+}
+
+/*
+.trabajos__card:last-of-type {
+    border: none;
+    padding-bottom: none;
+}
+*/
+
+.trabajos__card__img {
+    width: 100%;
+    object-fit: cover;
+    border: 1px solid rgba(0, 0, 0, .1);
+    box-shadow: 5px 5px 10px 0 rgba(36, 41, 55, .3);
+}
+
+
+.trabajos__card__informacion__titulo {
+    font-size: 1.5rem;
+    color: var(--bg-banner);
+    text-align: center;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.trabajos__card__informacion__descripcion {
+    color: var(--bg-banner);
+    margin: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.trabajos__card__informacion__enlaces {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    justify-content: center;
+}
+
+.trabajos__card__informacion__ir, .trabajos__card__informacion__ver {
+    display: inline-block;
+    color: var(--color-texto);
+    background-color: var(--bg-banner);
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.trabajos__card__informacion__ver {
+    margin-left: 1rem;
+    background-color: transparent;
+    border: 1px solid var(--bg-banner);
+    color: var(--bg-banner);
+}
+
+.trabajos__card__informacion__ver:hover {
+    color: var(--color-texto);
+    background-color: var(--bg-banner);
+}
+
+@media screen and (max-width: 800px) {
+    .trabajos {
+        padding: 0 30px;
+    }
+
+    .trabajos__card {
+        grid-template-columns: 1fr;
+        grid-row-gap: 30px;
+    }
+
+    .trabajos__card:first-of-type {
+        border-top: 1px solid rgba(36, 41, 55, 0.3);
+        padding-top: 2.5rem;
+    }
+
+    .trabajos__descripcion, .trabajos__card__informacion__descripcion {
+        font-size: 1rem;
+    }
+
+    .trabajos__card_imagenes {
+        order: 10;
+    }
+
+    .trabajos__card__informacion {
+        order: 1;
+    }
+
+    .trabajos__card__img {
+        box-shadow: 0px 0px 10px 0 rgba(36, 41, 55, .3);
+    }
+    
+    
+}

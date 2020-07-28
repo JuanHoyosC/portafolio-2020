@@ -1,0 +1,71 @@
+.footer {
+    background-color: var(--bg-banner);
+    padding: 30px 70px;
+}
+
+.footer__autor {
+    font-size: 1rem;
+    color: var(--color-texto);
+    text-align: center;
+    margin: 0;
+}
+
+.footer__lista-redes {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.footer__lista-redes__item {
+    position: relative;
+    font-size: 1.3rem;
+    background-color: rgba(0, 0, 0, .2);
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.footer__lista-redes__link {
+    display: block;
+    color: var(--color-texto);
+}
+
+.footer__lista-redes__item:hover > .footer__lista-redes__link{
+    position: relative;
+    animation: rotate 1s;
+}
+
+
+.footer__lista-redes__item:nth-child(n+2){
+    margin-left: 3rem;
+}
+
+
+@keyframes rotate {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-200%);
+        z-index: -1;
+    }
+
+    50%{
+        transform: translateY(calc(1.3rem + 10px));
+    }
+
+    100% {
+        z-index: 1;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .footer {
+        padding: 30px;
+    }
+}

@@ -1,0 +1,78 @@
+
+.banner-portafolio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100%;
+    grid-column-gap: 20px;
+    padding: 50px 70px;
+    height: var(--height-banner);
+    background-color: var(--bg-banner);
+    background-image: url(../../imagenes/bg-modo-oscuro.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -50px;
+    margin-bottom: var(--mb-components);
+
+}
+
+.banner-portafolio__imagen {
+    background-image: url(../../imagenes/JuanCarlosHoyos.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.banner-portafolio__informacion {
+    align-self: center;
+}
+
+.banner-portafolio__titulo {
+    font-size: 1.5rem;
+}
+
+.banner-portafolio__titulo, .banner-portafolio__descripcion{
+    color: var(--color-banner-claro);
+    text-align: center;
+    margin: 0;
+    margin-bottom: 1.5rem;
+}
+
+
+.banner-portafolio__lista-redes {
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.banner-portafolio__lista-redes__link {
+    color: var(--color-banner-claro);
+}
+
+.banner-portafolio__lista-redes__item:hover {
+    text-shadow: 1px 1px 10px var(--color-banner-claro);
+    cursor: pointer;
+}
+
+.banner-portafolio__lista-redes__item:nth-child(n+2){
+    margin-left: 1.5rem;
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+
+
+    .banner-portafolio {
+        grid-template-columns: 1fr;
+        padding: 50px 30px;
+    }
+    
+    .banner-portafolio__imagen {
+        display: none;
+    }
+    
+}
