@@ -4,12 +4,12 @@
         trabajos tanto web como de esritorio. Explora cada uno de ello y si te gusto mi trabajo, no olvides en
         contactarme.</p>
 
-    <div class="trabajos__card">
-        <div class="trabajos__card_imagenes">
-            <img src="https://i.imgur.com/I51A8f7.png" alt="domino-java-img" class="trabajos__card__img">
+    <div class="trabajos__card row">
+        <div class="trabajos__card_imagenes col-md-6">
+            <app-carousel [galeria]="domino" id="0"></app-carousel>
         </div>
 
-        <div class="trabajos__card__informacion">
+        <div class="trabajos__card__informacion col-md-6">
             <h3 class="trabajos__card__informacion__titulo">Domino en Java</h3>
             <p class="trabajos__card__informacion__descripcion">Este fue el primer trabajo que hice como freelancer,
                 consistia basicamente en crear un juego de domino, ya sea 1vs1 o 1vs2. Se podia registrar usuarios,
@@ -18,12 +18,65 @@
                 una base de datos.</p>
 
             <div class="trabajos__card__informacion__enlaces">
-                <a href="" class="trabajos__card__informacion__ir"><i class="far fa-eye"></i> Ir a la pagina</a>
-                <a href="" class="trabajos__card__informacion__ver"><i class="fab fa-github"></i> Ver codigo</a>
+                <a href="#" class="trabajos__card__informacion__ir"><i class="far fa-eye"></i> Ir a la pagina</a>
+                <a href="https://github.com/JuanHoyosC/Domino" target="_blank"
+                    class="trabajos__card__informacion__ver"><i class="fab fa-github"></i> Ver codigo</a>
             </div>
         </div>
 
     </div>
+
+
+    <div class="trabajos__card row">
+        <div class="trabajos__card_imagenes col-md-6">
+            <app-carousel [galeria]="jstorage" id="1"></app-carousel>
+        </div>
+
+        <div class="trabajos__card__informacion col-md-6">
+            <h3 class="trabajos__card__informacion__titulo">Jstorage</h3>
+            <p class="trabajos__card__informacion__descripcion">Proyecto personal que permite la creación de cuentas
+                mediante Google y Facebook, cuando el usuario ingrese a la pagina podrá crear carpetas al estilo Drive
+                para guardar todo tipo de archivos, desde PDF, words, hasta imagenes y videos.
+            </p>
+            <p class="trabajos__card__informacion__descripcion">La pagina web cuenta con varias herramientas para que el
+                usuario pueda manejar sus archivos de una forma ordenas en carpetas</p>
+
+            <div class="trabajos__card__informacion__enlaces">
+                <a href="https://linku-3.web.app/home" class="trabajos__card__informacion__ir"><i
+                        class="far fa-eye"></i> Ir a la pagina</a>
+                <a href="https://github.com/JuanHoyosC/Jstorage" target="_blank"
+                    class="trabajos__card__informacion__ver"><i class="fab fa-github"></i> Ver codigo</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="trabajos__card row">
+        <div class="trabajos__card_imagenes col-md-6">
+            <app-carousel [galeria]="task" id="2"></app-carousel>
+        </div>
+
+        <div class="trabajos__card__informacion col-md-6">
+            <h3 class="trabajos__card__informacion__titulo">TaskVenture</h3>
+            <p class="trabajos__card__informacion__descripcion">Pagina web creada en React uso de del Single Page App y
+                las Progresive Web App.
+            </p>
+            <p class="trabajos__card__informacion__descripcion">TaskVenture nacio como mi proyecto de grado para
+                estudiantes de colegio en los grados de bachillerato. La aplicación web manejará de forma gamificada las
+                tareas que los profesores agregan, ademas de tambien contar con habitos de estudios o habitos que
+                ellos se quieran imponer de una forma didactica y de videojuego, es decir tendrá todo lo que en un juego
+                tiene, vida, saldo, experiencia y demás que harán sus estudios más divertidos.</p>
+
+            <div class="trabajos__card__informacion__enlaces">
+                <a href="https://taskventure.netlify.app/" class="trabajos__card__informacion__ir"><i
+                        class="far fa-eye"></i> Ir a la pagina</a>
+                <a href="https://github.com/JuanHoyosC/app-game-FRONT" target="_blank"
+                    class="trabajos__card__informacion__ver"><i class="fab fa-github"></i> Ver codigo</a>
+            </div>
+        </div>
+
+    </div>
+
 
 
 </section>

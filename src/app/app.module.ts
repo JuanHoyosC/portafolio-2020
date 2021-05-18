@@ -10,6 +10,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { TrabajosComponent } from './components/trabajos/trabajos.component';
 import { ConocemeComponent } from './components/conoceme/conoceme.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -23,10 +25,12 @@ import { ConocemeComponent } from './components/conoceme/conoceme.component';
     FooterComponent,
     ContactoComponent,
     TrabajosComponent,
-    ConocemeComponent
+    ConocemeComponent,
+    CarouselComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
